@@ -1,0 +1,10 @@
+# Treat notebooks as text for diffs
+*.ipynb text
+
+# NOTE: This repo contains many binary assets (PDFs, images, videos).
+# If you want to use Git LFS, install it first, then run:
+#   git lfs install
+#   git lfs track "*.pdf" "*.png" "*.jpg" "*.jpeg" "*.mp4"
+# and commit the generated updates.
+
+
