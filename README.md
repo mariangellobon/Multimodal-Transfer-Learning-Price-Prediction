@@ -11,17 +11,12 @@ This repository contains:
 ## Repository structure
 
 ```
-ModelCode.ipynb
-dataset_final/
-  dataset.csv
-  images/
+FinalPricing.ipynb
 HODL_db_generation/
   market_extractor.py
   download_docs.py
   build_final_dataset.py
   requirements.txt
-  output/
-  WhatsApp Chat - Sloan Buy _ Sell 26s + 25s (1)/
 ```
 
 ---
