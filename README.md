@@ -21,9 +21,9 @@ HODL_db_generation/
 
 ---
 
-## `ModelCode.ipynb` — what the notebook does
+## `FinalPricing.ipynb` — what the notebook does
 
-`ModelCode.ipynb` documents the end-to-end modeling process:
+`FinalPricing.ipynb` documents the end-to-end modeling process:
 
 - **Load a large public dataset in streaming mode** (via Hugging Face `datasets`) to avoid downloading everything at once.
 - **Preprocess** examples by:
@@ -44,20 +44,6 @@ HODL_db_generation/
   - unfreezes encoders and fine-tunes with a **low learning rate** on the small dataset
 
 > Note: The notebook uses both PyTorch checkpoints (via `transformers`) and TensorFlow/Keras (`tf.keras`) for training/evaluation.
-
----
-
-## `dataset_final/` — the WhatsApp dataset we created
-
-`dataset_final/` is the **final cleaned dataset** derived from the Sloan Buy/Sell WhatsApp group export.
-
-- `dataset_final/dataset.csv` contains **one row per listing** with:
-  - `description`: cleaned item description (no price text)
-  - `image_ref`: filename of the best matching image for that listing (may be empty)
-  - `price`: numeric price (USD, as parsed)
-- `dataset_final/images/` contains the images referenced by `image_ref`.
-
-This folder is what `ModelCode.ipynb` uses for local fine-tuning.
 
 ---
 
